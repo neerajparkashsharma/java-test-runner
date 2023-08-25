@@ -9,7 +9,7 @@ public class MultiplyIntegersTest {
     @Test
     public void testSingleNumber() {
         int result = MultiplyIntegers.multiply("5");
-        assertEquals(5, result);
+        assertEquals(7, result);
     }
 
     @Test

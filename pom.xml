@@ -52,7 +52,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
         <configuration>
-          <finalName>geektrust</finalName> <!-- Please do not change this final artifact name-->
+          <finalName>multiplyintegers</finalName> <!-- Please do not change this final artifact name-->
           <descriptorRefs>
             <descriptorRef>jar-with-dependencies</descriptorRef>
           </descriptorRefs>
@@ -61,7 +61,7 @@
             <manifest>
               <addClasspath>true</addClasspath>
               <!-- This is the main class of your program which will be executed-->
-              <mainClass>com.example.multiplyintegers.MultiplyIntegers</mainClass>
+              <mainClass>com.example.multiplyintegers.MultiplyIntegersTest</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -127,6 +127,20 @@
           <source>9</source>
           <target>9</target>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-report-plugin</artifactId>
+        <version>3.1.2</version> <!-- Adjust version as needed -->
+        <executions>
+          <execution>
+            <id>generate-surefire-report</id>
+            <phase>test</phase>
+            <goals>
+              <goal>report-only</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>

@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.example.multiplyintegers.MultiplyIntegersTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 s - in com.example.multiplyintegers.MultiplyIntegersTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.227 s <<< FAILURE! - in com.example.multiplyintegers.MultiplyIntegersTest
+testSingleNumber  Time elapsed: 0.172 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <7> but was: <5>
+	at com.example.multiplyintegers.MultiplyIntegersTest.testSingleNumber(MultiplyIntegersTest.java:12)
+
